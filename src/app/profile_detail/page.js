@@ -5,7 +5,7 @@ import React from "react";
 import { useSearchParams } from "next/navigation";
 
 export default function page() {
-  const [count, setCount] = React.useState(null);
+  const [count, setCount] = React.useState("");
   const searchParams = useSearchParams();
   const url =
     "https://express-t4.onrender.com/api/users/" + searchParams.get("id");

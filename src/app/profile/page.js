@@ -6,8 +6,8 @@ import Link from "next/link";
 import { useRef } from "react";
 
 export default function page() {
-  const [count, setCount] = React.useState(null);
-  const name = useRef(null);
+  const [count, setCount] = React.useState("");
+  const name = useRef("");
 
   const name_list = function () {
     axios
