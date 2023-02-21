@@ -29,10 +29,10 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div>
-        <label for="username">username</label>
-        <input type="text" id="username" name="username"></input>
-        <label for="password">password</label>
-        <input type="text" id="password" name="password"></input>
+        <label className="username">username</label>
+        <input type="text" ref={username} name="username"></input>
+        <label className="password">password</label>
+        <input type="text" ref={password} name="password"></input>
         <button onClick={login}>login</button>
       </div>
     </main>
